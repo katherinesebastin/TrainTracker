@@ -20,7 +20,7 @@ This is a React app that shows real-time train locations using data from the Dig
 
 ## Installation Instructions:  
 
-**1.Clone the Repository:**  
+**1. Clone the Repository:**  
 First, I cloned the repository to my laptop:  
 git clone https://github.com/katherinesebastin/TrainTracker.git    
 
@@ -38,7 +38,7 @@ cd backend
 node server.js  
 The server runs on http://localhost:4000/api/trains.  
 
-**4. Run the Frontend:**
+**4. Run the Frontend:**  
 To start the React frontend, I navigated to the frontend folder and ran:  
 cd frontend  
 npm start  
