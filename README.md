@@ -20,14 +20,14 @@ Important Points:
 - Includes train number and speed
 - Free and publicly available (no API key required)
 
-### API Endpoint (Backend)
+## API Endpoint
 **Get train data**: `GET /api/trains`  
 Returns:  
 - Train number
 - Speed (km/h)
 - Location data (used for mapping)
 
-### How It Works:
+## How It Works
 **Backend**
 - The backend makes requests to the DigiTraffic API to get real-time train data
 - This data is then sent to the frontend through a REST API endpoint (/api/trains)
