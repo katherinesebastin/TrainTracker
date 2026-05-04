@@ -36,7 +36,8 @@ function App() {
   }, []);
 
   return (
-    <MapContainer center={center} zoom={6} style={{ height: "600px", width: "100%" }}>
+  <div className="App">
+    <MapContainer center={center} zoom={6} style={{ height: "100vh", width: "100vw" }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -49,11 +50,12 @@ function App() {
         >
           <Popup>
             <strong>Train Number:</strong> {train.trainNumber} <br />
-            <strong>Speed:</strong> {train.speed} km/h
+            <strong>Speed:</strong> {train.speed} km/h <br />
           </Popup>
         </Marker>
       ))}
     </MapContainer>
+  </div>
   );
 }
 
