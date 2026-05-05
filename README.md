@@ -1,7 +1,9 @@
 # Train Location Tracker
 This is a real-time web application that shows train locations in Finland on an interactive map. It uses live data from the DigiTraffic Railway API and updates every 10 seconds.    
-This is built with a React frontend and a Node.js + Express backend. The backend retreives live train data and the frontend displays it on a Leaflet-based map with interactive markers.
-Selecting a train marker shows details like train number and current speed.    
+
+This is built with a React frontend and a Node.js + Express backend.  
+
+The backend retreives live train data and the frontend displays it on a Leaflet-based map with interactive markers. Selecting a train marker shows details like train number and current speed.    
 
 ## Technologies Used
 ### Frontend
@@ -15,6 +17,7 @@ Selecting a train marker shows details like train number and current speed.
 
 ## Data Source (API)
 This project uses the official Finnish Transport Infrastructure Agency open data API: `https://rata.digitraffic.fi/api/v1/train-locations/latest/`  
+
 Important Points:  
 - Provides real-time train location data in Finland
 - Includes train number and speed
@@ -22,6 +25,7 @@ Important Points:
 
 ## API Endpoint
 **Get train data**: `GET /api/trains`  
+
 Returns:  
 - Train number
 - Speed (km/h)
@@ -39,24 +43,49 @@ Returns:
 
 ## Installation & Setup
 ### 1. Clone the Repository
-`git clone https://github.com/katherinesebastin/TrainTracker.git`  
-`cd TrainTracker`  
+```bash
+git clone https://github.com/katherinesebastin/TrainTracker.git
+```
+  
+```bash
+cd TrainTracker
+``` 
 
 ### 2. Install Dependencies
 **Backend**  
-`cd backend`  
-`npm install`  
+```bash
+cd backend
+```
+  
+```bash
+npm install
+```  
 
 **Frontend**  
-`cd frontend`  
-`npm install`  
+```bash
+cd frontend
+```
+  
+```bash
+npm install
+``` 
 
 ### 3. Run the Backend Server
-`cd backend`  
-`node server.js`  
+```bash
+cd backend
+``` 
+
+```bash
+node server.js
+```  
 Backend will run on: `http://localhost:4000/api/trains`  
 
 ### 4. Run the Frontend:
-`cd frontend`  
-`npm start`  
+```bash
+cd frontend
+``` 
+
+```bash
+npm start
+```  
 Frontend will run on: `http://localhost:3000`  
